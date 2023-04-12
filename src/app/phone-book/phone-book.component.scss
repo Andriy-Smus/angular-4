@@ -1,0 +1,186 @@
+.container{
+    padding: 0 10%;
+}
+
+h1{
+    font-weight: 400;
+    color: rgb(199, 23, 0);
+}
+
+.box{
+    width: 100%;
+    height: max-content;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(197, 197, 197);
+    margin-top: 15px;
+    &--input-task{
+        width: 80%;
+        height: 35px;
+        border-radius: 4px;
+        border: 1px solid rgb(197, 197, 197);
+        padding-left: 10px;
+        font-size: 16px;
+    }
+    &--input-task:focus{
+        outline: none;
+        border: 1px solid rgb(101, 224, 255);
+        box-shadow: 0 0 1px 2px rgba(55, 192, 255, 0.349);
+    }
+    &--bt-add{
+        width: 18%;
+        height: 35px;
+        border-radius: 4px;
+        background-color: rgb(19, 139, 39);
+        color: rgb(247, 247, 247);
+        border: none;
+        cursor: pointer;
+    }
+    &--bt-add:hover{
+        background-color: rgb(16, 121, 34);
+    }
+    &--bt-add:focus{
+        box-shadow: 0 0 1px 3px rgba(8, 160, 33, 0.582);
+    }
+}
+
+.box-add{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.541);
+    top: 0;
+    left: 0;
+    &--contact{
+        width: 35%;
+        height: max-content;
+        background-color: rgb(255, 255, 255);
+        margin: 100px auto;
+        border-radius: 4px;
+        position: relative;
+    }
+    h2{
+        padding: 15px 10px;
+    }
+    .uil-times{
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        cursor: pointer;
+    }
+    .box-input{
+        border-top: 1px solid rgb(197, 197, 197);
+        border-bottom: 1px solid rgb(197, 197, 197);
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .box-input input{
+        width: 90%;
+        height: 35px;
+        border-radius: 3px;
+        border: 1px solid rgb(197, 197, 197);
+        padding-left: 10px;
+        font-size: 16px;
+        margin: 15px auto 0;
+    }
+    .box-input input:focus{
+        outline: none;
+        border: 1px solid rgb(101, 224, 255);
+        box-shadow: 0 0 1px 2px rgba(55, 192, 255, 0.349);
+    }
+    .box-bt{
+        position: relative;
+        width: 100%;
+        height: 60px;
+        padding: 12px 20px;
+        display: flex;
+        justify-content: right;
+    }
+    .bt-save{
+        border: none;
+        height: 35px;
+        padding: 0 12px;
+        border-radius: 4px;
+        cursor: pointer;
+        background-color: rgb(0, 138, 230);
+        color: rgb(247, 247, 247);
+        border: 1px solid rgb(0, 127, 211);
+    }
+    .bt-save:hover{
+        background-color: rgb(0, 127, 211);
+    }
+}
+
+table{
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border: none;
+    margin: 0;
+    vertical-align:top;
+}
+thead{
+    border-bottom: 2px solid rgb(197, 197, 197);
+    padding-left: 20px;
+}
+thead, tr{
+    height: 50px;
+    border-top: 1px solid rgb(197, 197, 197);
+}
+
+th{
+    text-align: left;
+}
+
+.th-first-name, .th-last-name, .th-number{
+    cursor: pointer;
+    width: 20%;
+}
+.th-first-name{
+    padding-left: 1%;
+}
+.th-edit, .th-delete{
+    width: 15%;
+}
+
+td:nth-child(1){
+    padding-left: 1%;
+}
+
+.bt-edit, .bt-delete{
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.bt-edit{
+    background-color: rgb(247, 190, 2);
+    color: rgb(0, 0, 0);
+}
+.bt-edit:hover{
+    background-color: rgb(230, 176, 0);
+}
+.bt-edit:focus{
+    outline: none;
+    box-shadow: 0 0 1px 3px rgba(255, 199, 15, 0.664);
+}
+.bt-delete{
+    background-color: rgb(199, 23, 0);
+    color: rgb(247, 247, 247);
+}
+.bt-delete:hover{
+    background-color: rgb(167, 19, 0);
+}
+.bt-delete:focus{
+    box-shadow: 0 0 1px 3px rgba(167, 19, 0, 0.452);
+}
+
+tr:hover{
+    background-color: rgb(202, 202, 202);
+}
+.show{
+    display: block;
+}
